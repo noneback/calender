@@ -1,0 +1,3620 @@
+{
+  "generatedAt": "2026-09-24T16:00:47.740Z",
+  "sources": [
+    {
+      "id": "macro",
+      "name": "纽约联储 · 经济日历",
+      "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 49,
+      "start": "2026-09-01",
+      "end": "2026-11-27",
+      "error": null
+    },
+    {
+      "id": "fed",
+      "name": "Federal Reserve · 美联储",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 32,
+      "start": "2026-01-27",
+      "end": "2027-12-08",
+      "error": null
+    },
+    {
+      "id": "boj",
+      "name": "日本央行 · BOJ",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 32,
+      "start": "2026-01-22",
+      "end": "2027-12-17",
+      "error": null
+    },
+    {
+      "id": "nyse",
+      "name": "NYSE · 交易日历",
+      "url": "https://www.nyse.com/markets/hours-calendars",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 34,
+      "start": "2026-01-01",
+      "end": "2028-12-25",
+      "error": null
+    },
+    {
+      "id": "sse",
+      "name": "上交所 · 休市安排",
+      "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 33,
+      "start": "2026-01-01",
+      "end": "2026-10-07",
+      "error": null
+    },
+    {
+      "id": "holdings",
+      "name": "iShares · IVV 持仓",
+      "url": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 36,
+      "start": null,
+      "end": null,
+      "error": null
+    },
+    {
+      "id": "earnings",
+      "name": "Nasdaq · 预估财报日历",
+      "url": "https://www.nasdaq.com/market-activity/earnings",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:00:47.740Z",
+      "count": 32,
+      "start": "2026-09-24",
+      "end": "2026-11-08",
+      "error": null
+    },
+    {
+      "id": "expirations",
+      "name": "CME · 季度衍生品到期",
+      "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html",
+      "status": "ok",
+      "checkedAt": "2026-09-24T16:39:09.171Z",
+      "count": 12,
+      "start": "2026-03-20",
+      "end": "2028-12-15",
+      "error": null
+    }
+  ],
+  "events": [
+    {
+      "id": "macro-2026-09-01-ISM Manufacturing",
+      "title": "ISM · 制造业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-01T14:00:00.000Z"
+      },
+      "note": "观察美国制造业景气度。 来源条目：ISM Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-01-JOLTS",
+      "title": "JOLTS · 职位空缺",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-01T14:00:00.000Z"
+      },
+      "note": "观察劳动力需求。 来源条目：JOLTS。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-02-ADP National Employment Report",
+      "title": "ADP · 私营部门就业",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-02T12:15:00.000Z"
+      },
+      "note": "私营部门就业报告，统计口径不同于非农。 来源条目：ADP National Employment Report。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-03-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-03T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-03-ISM Non-Manufacturing",
+      "title": "ISM · 服务业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-03T14:00:00.000Z"
+      },
+      "note": "观察美国服务业景气度。 来源条目：ISM Non-Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-04-Employment Situation",
+      "title": "非农 · 美国就业报告",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-04T12:30:00.000Z"
+      },
+      "note": "关注非农就业、失业率和时薪变化。 来源条目：Employment Situation。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-10-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-10T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-10-Producer Price Index (PPI)",
+      "title": "PPI · 美国生产者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-10T12:30:00.000Z"
+      },
+      "note": "观察生产端价格压力。 来源条目：Producer Price Index (PPI)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-11-Consumer Price Index",
+      "title": "CPI · 美国消费者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-11T12:30:00.000Z"
+      },
+      "note": "关注整体与核心通胀，可能影响利率预期。 来源条目：Consumer Price Index。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-11-Michigan Consumer Survey (Preliminary)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-11T14:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Preliminary)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-16-Advance Retail Sales",
+      "title": "美国零售销售",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-16T12:30:00.000Z"
+      },
+      "note": "观察消费需求。 来源条目：Advance Retail Sales。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-17-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-17T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-24-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-24T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-25-Michigan Consumer Survey (Final)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-25T14:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Final)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-29-JOLTS",
+      "title": "JOLTS · 职位空缺",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-29T14:00:00.000Z"
+      },
+      "note": "观察劳动力需求。 来源条目：JOLTS。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-30-ADP National Employment Report",
+      "title": "ADP · 私营部门就业",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-30T12:15:00.000Z"
+      },
+      "note": "私营部门就业报告，统计口径不同于非农。 来源条目：ADP National Employment Report。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-30-Gross Domestic Product 3rd Release",
+      "title": "GDP · 美国国内生产总值",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-30T12:30:00.000Z"
+      },
+      "note": "观察经济增长，留意初值与修正值。 来源条目：Gross Domestic Product 3rd Release。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-09-30-Personal Income and the PCE Deflator",
+      "title": "PCE · 个人收入与支出",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-09-30T12:30:00.000Z"
+      },
+      "note": "关注 PCE 与核心 PCE 通胀。 来源条目：Personal Income and the PCE Deflator。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/nationalecon_cal"
+      }
+    },
+    {
+      "id": "macro-2026-10-01-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-01T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-01-ISM Manufacturing",
+      "title": "ISM · 制造业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-01T14:00:00.000Z"
+      },
+      "note": "观察美国制造业景气度。 来源条目：ISM Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-02-Employment Situation",
+      "title": "非农 · 美国就业报告",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-02T12:30:00.000Z"
+      },
+      "note": "关注非农就业、失业率和时薪变化。 来源条目：Employment Situation。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-05-ISM Non-Manufacturing",
+      "title": "ISM · 服务业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-05T14:00:00.000Z"
+      },
+      "note": "观察美国服务业景气度。 来源条目：ISM Non-Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-08-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-08T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-09-Michigan Consumer Survey (Preliminary)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-09T14:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Preliminary)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-14-Consumer Price Index",
+      "title": "CPI · 美国消费者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-14T12:30:00.000Z"
+      },
+      "note": "关注整体与核心通胀，可能影响利率预期。 来源条目：Consumer Price Index。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-15-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-15T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-15-Advance Retail Sales",
+      "title": "美国零售销售",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-15T12:30:00.000Z"
+      },
+      "note": "观察消费需求。 来源条目：Advance Retail Sales。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-15-Producer Price Index (PPI)",
+      "title": "PPI · 美国生产者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-15T12:30:00.000Z"
+      },
+      "note": "观察生产端价格压力。 来源条目：Producer Price Index (PPI)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-22-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-22T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-23-Michigan Consumer Survey (Final)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-23T14:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Final)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-29-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-29T12:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-29-Gross Domestic Product 1st Release",
+      "title": "GDP · 美国国内生产总值",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-29T12:30:00.000Z"
+      },
+      "note": "观察经济增长，留意初值与修正值。 来源条目：Gross Domestic Product 1st Release。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-10-29-Personal Income and the PCE Deflator",
+      "title": "PCE · 个人收入与支出",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-10-29T12:30:00.000Z"
+      },
+      "note": "关注 PCE 与核心 PCE 通胀。 来源条目：Personal Income and the PCE Deflator。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-02-ISM Manufacturing",
+      "title": "ISM · 制造业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-02T15:00:00.000Z"
+      },
+      "note": "观察美国制造业景气度。 来源条目：ISM Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-03-JOLTS",
+      "title": "JOLTS · 职位空缺",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-03T15:00:00.000Z"
+      },
+      "note": "观察劳动力需求。 来源条目：JOLTS。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-04-ADP National Employment Report",
+      "title": "ADP · 私营部门就业",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-04T13:15:00.000Z"
+      },
+      "note": "私营部门就业报告，统计口径不同于非农。 来源条目：ADP National Employment Report。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-04-ISM Non-Manufacturing",
+      "title": "ISM · 服务业 PMI",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-04T15:00:00.000Z"
+      },
+      "note": "观察美国服务业景气度。 来源条目：ISM Non-Manufacturing。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-05-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-05T13:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-06-Employment Situation",
+      "title": "非农 · 美国就业报告",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-06T13:30:00.000Z"
+      },
+      "note": "关注非农就业、失业率和时薪变化。 来源条目：Employment Situation。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-06-Michigan Consumer Survey (Preliminary)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-06T15:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Preliminary)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-10-Consumer Price Index",
+      "title": "CPI · 美国消费者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-10T13:30:00.000Z"
+      },
+      "note": "关注整体与核心通胀，可能影响利率预期。 来源条目：Consumer Price Index。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-12-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-12T13:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-13-Producer Price Index (PPI)",
+      "title": "PPI · 美国生产者价格指数",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-13T13:30:00.000Z"
+      },
+      "note": "观察生产端价格压力。 来源条目：Producer Price Index (PPI)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-17-Advance Retail Sales",
+      "title": "美国零售销售",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-17T13:30:00.000Z"
+      },
+      "note": "观察消费需求。 来源条目：Advance Retail Sales。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-19-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-19T13:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-20-Michigan Consumer Survey (Final)",
+      "title": "密歇根大学消费者调查",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-20T15:00:00.000Z"
+      },
+      "note": "关注消费信心与通胀预期。 来源条目：Michigan Consumer Survey (Final)。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-25-Gross Domestic Product 2nd Release",
+      "title": "GDP · 美国国内生产总值",
+      "category": "macro",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-25T13:30:00.000Z"
+      },
+      "note": "观察经济增长，留意初值与修正值。 来源条目：Gross Domestic Product 2nd Release。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-25-Personal Income and the PCE Deflator",
+      "title": "PCE · 个人收入与支出",
+      "category": "inflation",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-25T13:30:00.000Z"
+      },
+      "note": "关注 PCE 与核心 PCE 通胀。 来源条目：Personal Income and the PCE Deflator。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "macro-2026-11-27-Initial Claims",
+      "title": "美国初请失业金人数",
+      "category": "employment",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-27T13:30:00.000Z"
+      },
+      "note": "观察就业市场的高频变化。 来源条目：Initial Claims。日程可能调整，不包含预测值或实际公布值。",
+      "source": {
+        "name": "纽约联储 · 经济日历",
+        "url": "https://www.newyorkfed.org/research/calendars/i-nov26.html"
+      }
+    },
+    {
+      "id": "fed-2026-01-27-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-01-28-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-03-17-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-03-17",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-03-18-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-03-18",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-04-28-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-04-29-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-29",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-06-16-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-16",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-06-17-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-17",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-07-28-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-07-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-07-29-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-07-29",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-09-15-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-15",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-09-16-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-16",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-10-27-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-10-28-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-12-08-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-08",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2026-12-09-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-09",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-01-26-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-26",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-01-27-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-03-16-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-16",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-03-17-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-17",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-04-27-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-04-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-04-28-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-04-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-06-08-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-08",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-06-09-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-09",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-07-27-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-07-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-07-28-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-07-28",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-09-14-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-14",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-09-15-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-15",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-10-26-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-10-26",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-10-27-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-10-27",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-12-07-FOMC · 议息会议首日",
+      "title": "FOMC · 议息会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-07",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "fed-2027-12-08-FOMC · 议息会议末日",
+      "title": "FOMC · 议息会议末日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-08",
+        "zone": "America/New_York"
+      },
+      "note": "美东会议日期，声明具体发布时间待官方确认。关注政策利率、政策措辞及经济预测（SEP）；不代表一定加息或降息。",
+      "source": {
+        "name": "Federal Reserve · 美联储",
+        "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      }
+    },
+    {
+      "id": "boj-2026-01-22-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-22",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-01-23-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-23",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-03-18-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-03-18",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-03-19-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-03-19",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-04-27-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-27",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-04-28-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-28",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-06-15-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-15",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-06-16-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-16",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-07-30-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-07-30",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-07-31-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-07-31",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-09-17-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-17",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-09-18-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-18",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-10-29-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-29",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-10-30-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-30",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-12-17-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-17",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2026-12-18-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-18",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-01-21-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-21",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-01-22-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-22",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-03-17-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-17",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-03-18-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-18",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-04-27-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-04-27",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-04-28-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-04-28",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-06-10-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-10",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-06-11-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-11",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-07-21-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-07-21",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-07-22-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-07-22",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-09-21-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-21",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-09-22-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-22",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-10-28-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-10-28",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-10-29-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-10-29",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-12-16-BOJ · 日本央行会议首日",
+      "title": "BOJ · 日本央行会议首日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-16",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "boj-2027-12-17-BOJ · 日本央行利率决议日",
+      "title": "BOJ · 日本央行利率决议日",
+      "category": "fed",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-17",
+        "zone": "Asia/Tokyo"
+      },
+      "note": "日本当地会议日期，决议发布时间未固定。关注日元利率、汇率及跨市场资金变化；会议安排不代表已决定加息，也不预测波动持续时间。",
+      "source": {
+        "name": "日本央行 · BOJ",
+        "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+      }
+    },
+    {
+      "id": "nyse-2026-01-01-元旦 · 美股休市",
+      "title": "元旦 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-01",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-01-01-元旦 · 美股休市",
+      "title": "元旦 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-01",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-01-19-马丁路德金纪念日 · 美股休市",
+      "title": "马丁路德金纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-19",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-01-18-马丁路德金纪念日 · 美股休市",
+      "title": "马丁路德金纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-01-18",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-01-17-马丁路德金纪念日 · 美股休市",
+      "title": "马丁路德金纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-01-17",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-02-16-总统日 · 美股休市",
+      "title": "总统日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-16",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-02-15-总统日 · 美股休市",
+      "title": "总统日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-02-15",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-02-21-总统日 · 美股休市",
+      "title": "总统日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-02-21",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-04-03-耶稣受难日 · 美股休市",
+      "title": "耶稣受难日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-03",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-03-26-耶稣受难日 · 美股休市",
+      "title": "耶稣受难日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-26",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-04-14-耶稣受难日 · 美股休市",
+      "title": "耶稣受难日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-04-14",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-05-25-阵亡将士纪念日 · 美股休市",
+      "title": "阵亡将士纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-25",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-05-31-阵亡将士纪念日 · 美股休市",
+      "title": "阵亡将士纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-05-31",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-05-29-阵亡将士纪念日 · 美股休市",
+      "title": "阵亡将士纪念日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-05-29",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-06-19-六月节 · 美股休市",
+      "title": "六月节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-19",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-06-18-六月节 · 美股休市",
+      "title": "六月节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-18",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-06-19-六月节 · 美股休市",
+      "title": "六月节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-06-19",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-07-03-独立日 · 美股休市",
+      "title": "独立日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-07-03",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-07-05-独立日 · 美股休市",
+      "title": "独立日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-07-05",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-07-04-独立日 · 美股休市",
+      "title": "独立日 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-07-04",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-09-07-劳动节 · 美股休市",
+      "title": "劳动节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-07",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-09-06-劳动节 · 美股休市",
+      "title": "劳动节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-06",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-09-04-劳动节 · 美股休市",
+      "title": "劳动节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-09-04",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-11-26-感恩节 · 美股休市",
+      "title": "感恩节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-26",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-11-25-感恩节 · 美股休市",
+      "title": "感恩节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-11-25",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-11-23-感恩节 · 美股休市",
+      "title": "感恩节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-11-23",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-12-25-圣诞节 · 美股休市",
+      "title": "圣诞节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-25",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-12-24-圣诞节 · 美股休市",
+      "title": "圣诞节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-24",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-12-25-圣诞节 · 美股休市",
+      "title": "圣诞节 · 美股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2028-12-25",
+        "zone": "America/New_York"
+      },
+      "note": "NYSE 股票市场全天休市。按美东交易日期记录；美国节日不等于全部资产市场休市。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-07-03-美股提前收市 · 13:00 ET",
+      "title": "美股提前收市 · 13:00 ET",
+      "category": "holiday",
+      "timing": {
+        "kind": "timed",
+        "at": "2028-07-03T17:00:00.000Z"
+      },
+      "note": "NYSE 股票常规交易于美东 13:00 结束。部分期权交易时间不同，详见来源。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-11-27-美股提前收市 · 13:00 ET",
+      "title": "美股提前收市 · 13:00 ET",
+      "category": "holiday",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-11-27T18:00:00.000Z"
+      },
+      "note": "NYSE 股票常规交易于美东 13:00 结束。部分期权交易时间不同，详见来源。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2027-11-26-美股提前收市 · 13:00 ET",
+      "title": "美股提前收市 · 13:00 ET",
+      "category": "holiday",
+      "timing": {
+        "kind": "timed",
+        "at": "2027-11-26T18:00:00.000Z"
+      },
+      "note": "NYSE 股票常规交易于美东 13:00 结束。部分期权交易时间不同，详见来源。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2028-11-24-美股提前收市 · 13:00 ET",
+      "title": "美股提前收市 · 13:00 ET",
+      "category": "holiday",
+      "timing": {
+        "kind": "timed",
+        "at": "2028-11-24T18:00:00.000Z"
+      },
+      "note": "NYSE 股票常规交易于美东 13:00 结束。部分期权交易时间不同，详见来源。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "nyse-2026-12-24-美股提前收市 · 13:00 ET",
+      "title": "美股提前收市 · 13:00 ET",
+      "category": "holiday",
+      "timing": {
+        "kind": "timed",
+        "at": "2026-12-24T18:00:00.000Z"
+      },
+      "note": "NYSE 股票常规交易于美东 13:00 结束。部分期权交易时间不同，详见来源。",
+      "source": {
+        "name": "NYSE · 交易日历",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    {
+      "id": "sse-2026-01-01-元旦 · A股休市",
+      "title": "元旦 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-01",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-01-02-元旦 · A股休市",
+      "title": "元旦 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-02",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-01-03-元旦 · A股休市",
+      "title": "元旦 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-01-03",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-15-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-15",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-16-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-16",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-17-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-17",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-18-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-18",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-19-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-19",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-20-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-20",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-21-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-21",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-22-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-22",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-02-23-春节 · A股休市",
+      "title": "春节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-02-23",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-04-04-清明节 · A股休市",
+      "title": "清明节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-04",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-04-05-清明节 · A股休市",
+      "title": "清明节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-05",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-04-06-清明节 · A股休市",
+      "title": "清明节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-04-06",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-05-01-劳动节 · A股休市",
+      "title": "劳动节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-01",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-05-02-劳动节 · A股休市",
+      "title": "劳动节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-02",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-05-03-劳动节 · A股休市",
+      "title": "劳动节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-03",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-05-04-劳动节 · A股休市",
+      "title": "劳动节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-04",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-05-05-劳动节 · A股休市",
+      "title": "劳动节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-05-05",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-06-19-端午节 · A股休市",
+      "title": "端午节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-19",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-06-20-端午节 · A股休市",
+      "title": "端午节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-20",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-06-21-端午节 · A股休市",
+      "title": "端午节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-21",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-09-25-中秋节 · A股休市",
+      "title": "中秋节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-25",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-09-26-中秋节 · A股休市",
+      "title": "中秋节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-26",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-09-27-中秋节 · A股休市",
+      "title": "中秋节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-27",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-01-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-01",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-02-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-02",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-03-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-03",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-04-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-04",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-05-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-05",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-06-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-06",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "sse-2026-10-07-国庆节 · A股休市",
+      "title": "国庆节 · A股休市",
+      "category": "holiday",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-07",
+        "zone": "Asia/Shanghai"
+      },
+      "note": "上交所节假日休市安排，包含假期内周末。中国市场休市可能影响跨市场交易安排；不表示美股或港股同时休市。",
+      "source": {
+        "name": "上交所 · 休市安排",
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/"
+      }
+    },
+    {
+      "id": "earnings-2026-09-24-COST · 预估财报",
+      "title": "COST · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-24",
+        "zone": "America/New_York"
+      },
+      "note": "Costco Wholesale Corporation，报告期 Aug/2026，盘后。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-09-30-MU · 预估财报",
+      "title": "MU · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-30",
+        "zone": "America/New_York"
+      },
+      "note": "Micron Technology, Inc.，报告期 Aug/2026，盘后。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-13-JPM · 预估财报",
+      "title": "JPM · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-13",
+        "zone": "America/New_York"
+      },
+      "note": "J P Morgan Chase & Co，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-13-JNJ · 预估财报",
+      "title": "JNJ · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-13",
+        "zone": "America/New_York"
+      },
+      "note": "Johnson & Johnson，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-15-PLD · 预估财报",
+      "title": "PLD · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-15",
+        "zone": "America/New_York"
+      },
+      "note": "Prologis, Inc.，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-20-GE · 预估财报",
+      "title": "GE · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-20",
+        "zone": "America/New_York"
+      },
+      "note": "GE Aerospace，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-20-NFLX · 预估财报",
+      "title": "NFLX · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-20",
+        "zone": "America/New_York"
+      },
+      "note": "Netflix, Inc.，报告期 Sep/2026，盘后。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-20-RTX · 预估财报",
+      "title": "RTX · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-20",
+        "zone": "America/New_York"
+      },
+      "note": "RTX Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-22-PG · 预估财报",
+      "title": "PG · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-22",
+        "zone": "America/New_York"
+      },
+      "note": "Procter & Gamble Company (The)，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-22-NEM · 预估财报",
+      "title": "NEM · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-22",
+        "zone": "America/New_York"
+      },
+      "note": "Newmont Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-22-FCX · 预估财报",
+      "title": "FCX · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-22",
+        "zone": "America/New_York"
+      },
+      "note": "Freeport-McMoran, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-26-WELL · 预估财报",
+      "title": "WELL · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-26",
+        "zone": "America/New_York"
+      },
+      "note": "Welltower Inc.，报告期 Sep/2026，盘后。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-27-V · 预估财报",
+      "title": "V · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-27",
+        "zone": "America/New_York"
+      },
+      "note": "Visa Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-27-NEE · 预估财报",
+      "title": "NEE · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-27",
+        "zone": "America/New_York"
+      },
+      "note": "NextEra Energy, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-28-TSLA · 预估财报",
+      "title": "TSLA · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-28",
+        "zone": "America/New_York"
+      },
+      "note": "Tesla, Inc. ，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-29-AAPL · 预估财报",
+      "title": "AAPL · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-29",
+        "zone": "America/New_York"
+      },
+      "note": "Apple Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-29-AMZN · 预估财报",
+      "title": "AMZN · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-29",
+        "zone": "America/New_York"
+      },
+      "note": "Amazon.com, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-29-LLY · 预估财报",
+      "title": "LLY · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-29",
+        "zone": "America/New_York"
+      },
+      "note": "Eli Lilly and Company，报告期 Sep/2026，盘前。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-29-SO · 预估财报",
+      "title": "SO · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-29",
+        "zone": "America/New_York"
+      },
+      "note": "Southern Company (The)，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-30-XOM · 预估财报",
+      "title": "XOM · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-30",
+        "zone": "America/New_York"
+      },
+      "note": "ExxonMobil Holdings Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-30-ABBV · 预估财报",
+      "title": "ABBV · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-30",
+        "zone": "America/New_York"
+      },
+      "note": "AbbVie Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-30-CVX · 预估财报",
+      "title": "CVX · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-30",
+        "zone": "America/New_York"
+      },
+      "note": "Chevron Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-10-30-LIN · 预估财报",
+      "title": "LIN · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-10-30",
+        "zone": "America/New_York"
+      },
+      "note": "Linde plc，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-03-AMD · 预估财报",
+      "title": "AMD · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-03",
+        "zone": "America/New_York"
+      },
+      "note": "Advanced Micro Devices, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-04-GOOGL · 预估财报",
+      "title": "GOOGL · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-04",
+        "zone": "America/New_York"
+      },
+      "note": "Alphabet Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-04-MSFT · 预估财报",
+      "title": "MSFT · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-04",
+        "zone": "America/New_York"
+      },
+      "note": "Microsoft Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-04-META · 预估财报",
+      "title": "META · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-04",
+        "zone": "America/New_York"
+      },
+      "note": "Meta Platforms, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-04-CAT · 预估财报",
+      "title": "CAT · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-04",
+        "zone": "America/New_York"
+      },
+      "note": "Caterpillar, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-04-EQIX · 预估财报",
+      "title": "EQIX · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-04",
+        "zone": "America/New_York"
+      },
+      "note": "Equinix, Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-05-COP · 预估财报",
+      "title": "COP · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-05",
+        "zone": "America/New_York"
+      },
+      "note": "ConocoPhillips，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-05-DUK · 预估财报",
+      "title": "DUK · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-05",
+        "zone": "America/New_York"
+      },
+      "note": "Duke Energy Corporation，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "earnings-2026-11-06-BRK.B · 预估财报",
+      "title": "BRK.B · 预估财报",
+      "category": "earnings",
+      "timing": {
+        "kind": "date",
+        "date": "2026-11-06",
+        "zone": "America/New_York"
+      },
+      "note": "Berkshire Hathaway Inc.，报告期 Sep/2026，时间未公布。Nasdaq / Zacks 提供的日历可能根据历史规律估算，并非公司已确认日期；请关注公司投资者关系公告。",
+      "source": {
+        "name": "Nasdaq · 预估财报日历",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      }
+    },
+    {
+      "id": "expirations-2026-03-20-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2026-03-20",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2026-06-18-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2026-06-18",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2026-09-18-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2026-09-18",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2026-12-18-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2026-12-18",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2027-03-19-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2027-03-19",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2027-06-18-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2027-06-18",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2027-09-17-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2027-09-17",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2027-12-17-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2027-12-17",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2028-03-17-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2028-03-17",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2028-06-16-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2028-06-16",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2028-09-15-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2028-09-15",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    },
+    {
+      "id": "expirations-2028-12-15-三巫日 / 四巫日 · 季度集中到期",
+      "title": "三巫日 / 四巫日 · 季度集中到期",
+      "category": "expiration",
+      "timing": {
+        "kind": "date",
+        "date": "2028-12-15",
+        "zone": "America/New_York"
+      },
+      "note": "季度衍生品集中到期窗口，日期取自 CME 美国股指期货官方到期表（非移仓日），包含假期调整。三巫日指股票期权、股指期权与股指期货集中到期；四巫日是历史上另计个股期货的称呼，此处合并检索，不重复计数。不同合约的最后交易日及 AM/PM 结算时点不同，不代表全部在收盘同时到期。关注移仓、对冲与成交量变化，不表示必然大涨、大跌或持续震荡。",
+      "source": {
+        "name": "CME · 季度衍生品到期",
+        "url": "https://www.cmegroup.com/trading/equity-index/rolldates.html"
+      }
+    }
+  ],
+  "leaders": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "sector": "Information Technology",
+      "weight": 8.27
+    },
+    {
+      "symbol": "AAPL",
+      "name": "APPLE",
+      "sector": "Information Technology",
+      "weight": 7.4
+    },
+    {
+      "symbol": "MSFT",
+      "name": "MICROSOFT",
+      "sector": "Information Technology",
+      "weight": 5.52
+    },
+    {
+      "symbol": "AMZN",
+      "name": "AMAZON.COM INC",
+      "sector": "Consumer Discretionary",
+      "weight": 3.74
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "ALPHABET CLASS A",
+      "sector": "Communication",
+      "weight": 3.08
+    },
+    {
+      "symbol": "AVGO",
+      "name": "BROADCOM INC",
+      "sector": "Information Technology",
+      "weight": 2.59
+    },
+    {
+      "symbol": "META",
+      "name": "META PLATFORMS CLASS A",
+      "sector": "Communication",
+      "weight": 2.42
+    },
+    {
+      "symbol": "MU",
+      "name": "MICRON TECHNOLOGY",
+      "sector": "Information Technology",
+      "weight": 1.85
+    },
+    {
+      "symbol": "TSLA",
+      "name": "TESLA INC",
+      "sector": "Consumer Discretionary",
+      "weight": 1.59
+    },
+    {
+      "symbol": "AMD",
+      "name": "ADVANCED MICRO DEVICES",
+      "sector": "Information Technology",
+      "weight": 1.52
+    },
+    {
+      "symbol": "HD",
+      "name": "HOME DEPOT",
+      "sector": "Consumer Discretionary",
+      "weight": 0.45
+    },
+    {
+      "symbol": "NFLX",
+      "name": "NETFLIX",
+      "sector": "Communication",
+      "weight": 0.45
+    },
+    {
+      "symbol": "BRK.B",
+      "name": "BERKSHIRE HATHAWAY INC CLASS B",
+      "sector": "Financials",
+      "weight": 1.4
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPMORGAN CHASE & CO",
+      "sector": "Financials",
+      "weight": 1.35
+    },
+    {
+      "symbol": "V",
+      "name": "VISA CLASS A",
+      "sector": "Financials",
+      "weight": 0.92
+    },
+    {
+      "symbol": "LLY",
+      "name": "ELI LILLY",
+      "sector": "Health Care",
+      "weight": 1.4
+    },
+    {
+      "symbol": "JNJ",
+      "name": "JOHNSON & JOHNSON",
+      "sector": "Health Care",
+      "weight": 0.97
+    },
+    {
+      "symbol": "ABBV",
+      "name": "ABBVIE",
+      "sector": "Health Care",
+      "weight": 0.7
+    },
+    {
+      "symbol": "XOM",
+      "name": "EXXONMOBIL HOLDINGS CORP",
+      "sector": "Energy",
+      "weight": 0.97
+    },
+    {
+      "symbol": "CVX",
+      "name": "CHEVRON",
+      "sector": "Energy",
+      "weight": 0.6
+    },
+    {
+      "symbol": "COP",
+      "name": "CONOCOPHILLIPS",
+      "sector": "Energy",
+      "weight": 0.22
+    },
+    {
+      "symbol": "WMT",
+      "name": "WALMART",
+      "sector": "Consumer Staples",
+      "weight": 0.73
+    },
+    {
+      "symbol": "COST",
+      "name": "COSTCO WHOLESALE CORP",
+      "sector": "Consumer Staples",
+      "weight": 0.6
+    },
+    {
+      "symbol": "PG",
+      "name": "PROCTER & GAMBLE",
+      "sector": "Consumer Staples",
+      "weight": 0.51
+    },
+    {
+      "symbol": "CAT",
+      "name": "CATERPILLAR INC",
+      "sector": "Industrials",
+      "weight": 0.55
+    },
+    {
+      "symbol": "GE",
+      "name": "GE AEROSPACE",
+      "sector": "Industrials",
+      "weight": 0.49
+    },
+    {
+      "symbol": "RTX",
+      "name": "RTX",
+      "sector": "Industrials",
+      "weight": 0.38
+    },
+    {
+      "symbol": "LIN",
+      "name": "LINDE PLC",
+      "sector": "Materials",
+      "weight": 0.32
+    },
+    {
+      "symbol": "NEM",
+      "name": "NEWMONT",
+      "sector": "Materials",
+      "weight": 0.2
+    },
+    {
+      "symbol": "FCX",
+      "name": "FREEPORT MCMORAN INC",
+      "sector": "Materials",
+      "weight": 0.16
+    },
+    {
+      "symbol": "WELL",
+      "name": "WELLTOWER",
+      "sector": "Real Estate",
+      "weight": 0.25
+    },
+    {
+      "symbol": "PLD",
+      "name": "PROLOGIS REIT",
+      "sector": "Real Estate",
+      "weight": 0.19
+    },
+    {
+      "symbol": "EQIX",
+      "name": "EQUINIX REIT",
+      "sector": "Real Estate",
+      "weight": 0.16
+    },
+    {
+      "symbol": "NEE",
+      "name": "NEXTERA ENERGY",
+      "sector": "Utilities",
+      "weight": 0.25
+    },
+    {
+      "symbol": "SO",
+      "name": "SOUTHERN",
+      "sector": "Utilities",
+      "weight": 0.15
+    },
+    {
+      "symbol": "DUK",
+      "name": "DUKE ENERGY CORP",
+      "sector": "Utilities",
+      "weight": 0.14
+    }
+  ],
+  "holdingsDate": "Sep 22, 2026"
+}
