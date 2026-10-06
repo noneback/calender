@@ -30,11 +30,17 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: npm test
+      - name: Require a fresh sync output
+        run: |
+          rm -f public/data/events.json
+          echo "SYNC_STARTED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Fetch current schedules
         id: sync
         continue-on-error: true
         run: npm run sync
-      - run: npm test
+      - name: Validate generated feed before publishing
+        run: npm run verify:feed
       - run: npm run build
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
@@ -46,5 +52,5 @@ jobs:
       - name: Report incomplete sync
         if: steps.sync.outcome == 'failure'
         run: |
-          echo '::error::One or more calendar sources failed. Published explicit source error status; inspect the sync logs.'
+          echo '::error::Calendar sync did not complete cleanly. Published only the freshly validated feed; inspect the sync logs and source status.'
           exit 1

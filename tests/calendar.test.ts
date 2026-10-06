@@ -2,11 +2,40 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { beijingToUtc, eventDay, eventSchema, monthDays, shiftMonth, feedSchema } from '../src/model.ts';
-import { easternTime } from '../scripts/shared.ts';
+import { easternTime, sources } from '../scripts/shared.ts';
 import { filteredEvents } from '../src/view.ts';
 import { rankEvents, byImportance, nextHighlights } from '../src/importance.ts';
 import { parseMacro } from '../scripts/macro.ts';
-import type { Saved } from '../src/model.ts';
+import { parseBoj, parseFed } from '../scripts/policy.ts';
+import { parseNyse, parseSse } from '../scripts/holidays.ts';
+import { parseEarnings, parseLeaders } from '../scripts/earnings.ts';
+import { parseExpirations } from '../scripts/expirations.ts';
+import type { Feed, Saved } from '../src/model.ts';
+
+/** Keep unit tests independent of live source failures and the moving earnings window. */
+function fixtureFeed(): Feed {
+  const fixture = (name: string): string => readFileSync(`tests/fixtures/${name}`, 'utf8');
+  const { leaders, holdingsDate } = parseLeaders(fixture('ivv.csv'));
+  const events = [
+    ...parseMacro(fixture('nyfed.html'), sources.macro.url),
+    ...parseFed(fixture('fed.html'), 2026),
+    ...parseBoj(fixture('boj.html'), 2026),
+    ...parseNyse(fixture('nyse.html')),
+    ...parseSse(fixture('sse.html')),
+    ...parseExpirations(fixture('cme.html'), 2026),
+    ...parseEarnings(fixture('earnings.json'), '2026-10-29', leaders),
+  ];
+  const generatedAt: string = '2026-09-25T00:00:00.000Z';
+  return feedSchema.parse({
+    generatedAt, events, leaders, holdingsDate,
+    sources: Object.values(sources).map((source) => {
+      const sourceEvents = events.filter((event): boolean => event.source?.name === source.name);
+      const days = sourceEvents.map((event): string => eventDay(event, 'America/New_York')).sort();
+      return { ...source, status: 'ok', checkedAt: generatedAt, count: source.id === 'holdings' ? leaders.length : sourceEvents.length,
+        start: days[0] ?? null, end: days.at(-1) ?? null, error: null };
+    }),
+  });
+}
 
 test('US daytime releases account for DST and cross-date Beijing display', (): void => {
   assert.equal(easternTime('2026-10-14', '08:30'), '2026-10-14T12:30:00.000Z');
@@ -26,10 +55,10 @@ test('month navigation preserves leap days and crosses years', (): void => {
   assert.equal(monthDays('2026-09')[0], '2026-08-31');
 });
 
-test('synced feed validates and category/search/favorite filters compose', (): void => {
-  const feed = feedSchema.parse(JSON.parse(readFileSync('public/data/events.json', 'utf8')));
+test('fixture feed validates and category/search/favorite filters compose', (): void => {
+  const feed = fixtureFeed();
   assert.ok(feed.sources.length >= 7);
-  const fixtureEvents = parseMacro(readFileSync('tests/fixtures/nyfed.html', 'utf8'), 'https://www.newyorkfed.org/research/calendars/nationalecon_cal');
+  const fixtureEvents = feed.events.filter((event): boolean => event.source?.name === sources.macro.name);
   const cpi = fixtureEvents.find((event): boolean => event.title.includes('CPI'));
   assert.ok(cpi);
   const saved: Saved = { version: 1, zone: 'Asia/Shanghai', favorites: [cpi.id], events: [] };
@@ -38,7 +67,7 @@ test('synced feed validates and category/search/favorite filters compose', (): v
 });
 
 test('attention levels distinguish policy decisions and prioritize large-index earnings', (): void => {
-  const feed = feedSchema.parse(JSON.parse(readFileSync('public/data/events.json', 'utf8')));
+  const feed = fixtureFeed();
   const events = rankEvents(feed.events, feed.leaders);
   const cpi = events.find((event): boolean => event.title.startsWith('CPI ·'));
   const opening = events.find((event): boolean => event.title.includes('FOMC') && event.title.includes('首日'));
@@ -56,7 +85,7 @@ test('attention levels distinguish policy decisions and prioritize large-index e
 });
 
 test('priority ordering is immutable and source-local earnings remain upcoming across midnight', (): void => {
-  const feed = feedSchema.parse(JSON.parse(readFileSync('public/data/events.json', 'utf8')));
+  const feed = fixtureFeed();
   const events = rankEvents(feed.events, feed.leaders);
   const apple = events.find((event): boolean => event.title.startsWith('AAPL ·'));
   const holiday = events.find((event): boolean => event.category === 'holiday');
