@@ -56,7 +56,7 @@ Pull request 会单独运行固定样本测试、构建及 GitHub runner 上的�
 
 当前不包含突发新闻、地缘事件的自动识别，也不提供经济数据预测值、实际值、行情或交易信号。节日范围为交易所休市相关节日，不是完整的中美民俗节日库。公开来源可能修改结构或访问限制，解析失败会显式报错，不会编造日期或悄悄沿用旧数据。
 
-NYSE 和上交所日历页无法读取时，会实时读取同一交易所的官方年度公告：[ICE / NYSE 2026–2028 年公告](https://ir.theice.com/press/news-details/2025/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar/default.aspx)、[上交所 2026 年公告](https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20251222_10802510.shtml)。事件与来源状态链接会指向实际使用的公告；公告不含当前年份时拒绝使用，需要更新来源。不会绕过访问限制，也不会将固定测试样本作为实时数据发布。
+NYSE 和上交所日历页无法读取时，会实时读取同一交易所的官方年度公告：[ICE / NYSE 2026–2028 年公告](https://ir.theice.com/press/news-details/2025/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar/default.aspx)、[上交所 2026 年公告](https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20251222_10802510.shtml)。NYSE 公告 HTML 也被限制时，读取公告页直接发布的[官方 PDF](https://s2.q4cdn.com/154085107/files/doc_news/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar-2025.pdf)，通过 PDF.js 按文字坐标重建表格，验证年份、节日数量、日期与星期及提前收市脚注。事件与来源状态链接会指向实际使用的公告；公告不含当前年份时拒绝使用，需要更新来源。不会绕过访问限制，也不会将固定测试样本作为实时数据发布。PDF.js 仅用于 Node.js 同步与测试，不进入网页包。
 
 IVV 原始持仓中的现金、期货余额允许负权重，先验证数值和结构，再筛选股票；股票权重仍须非负，并保留至少 400 只股票和 11 个行业的完整性检查。
 

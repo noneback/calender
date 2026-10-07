@@ -25,16 +25,6 @@ jobs:
           node --experimental-strip-types --input-type=module <<'JS'
           import { fetchHolidayCalendar } from './scripts/holiday-source.ts';
           import { fetchText, sources } from './scripts/shared.ts';
-          for (const url of [
-            'https://s2.q4cdn.com/154085107/files/doc_news/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar-2025.pdf',
-            'https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20251222_10802510.shtml',
-            'https://nasdaqtrader.com/Trader.aspx?id=Calendar',
-          ]) {
-            try {
-              const response = await fetch(url, { headers: { 'User-Agent': 'MarketCalendar/0.1' }, signal: AbortSignal.timeout(30000) });
-              console.info(JSON.stringify({ probe: url, status: response.status, bytes: (await response.arrayBuffer()).byteLength }));
-            } catch (error) { console.warn(JSON.stringify({ probe: url, error: String(error) })); }
-          }
           for (const id of ['nyse', 'sse']) {
             const result = await fetchHolidayCalendar(id, new Date().getUTCFullYear(), async (url, accept) => {
               if (url === sources[id].url) throw new Error('Primary intentionally skipped for alternate smoke test');

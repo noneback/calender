@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseBoj, parseFed } from '../scripts/policy.ts';
 import { parseNyse, parseSse } from '../scripts/holidays.ts';
-import { fetchHolidayCalendar, holidayAlternatives } from '../scripts/holiday-source.ts';
+import { fetchHolidayCalendar, holidayAlternatives, nysePdf } from '../scripts/holiday-source.ts';
+import { parseNysePdf } from '../scripts/nyse-pdf.ts';
 import { sources } from '../scripts/shared.ts';
 import { parseMacro } from '../scripts/macro.ts';
 import { parseLeaders, parseEarnings } from '../scripts/earnings.ts';
@@ -56,9 +57,22 @@ test('403 uses a fetched official alternative with exact provenance, never inven
     assert.deepEqual(calls, [sources[id].url, holidayAlternatives[id].url]);
     assert.deepEqual(result.source, holidayAlternatives[id]);
     assert.ok(result.events.every((event): boolean => event.source?.url === holidayAlternatives[id].url));
-    await assert.rejects(fetchHolidayCalendar(id, 2029, request), /does not cover current year 2029/);
-    await assert.rejects(fetchHolidayCalendar(id, 2026, async (): Promise<string> => '<html>Blocked</html>'), /calendars unavailable/);
+    const blockedPdf = async (): Promise<Uint8Array> => { throw new Error('PDF unavailable'); };
+    await assert.rejects(fetchHolidayCalendar(id, 2029, request, blockedPdf), /does not cover current year 2029/);
+    await assert.rejects(fetchHolidayCalendar(id, 2026, async (): Promise<string> => '<html>Blocked</html>', blockedPdf), /calendars unavailable/);
   }
+});
+
+test('official PDF reconstruction preserves all 34 NYSE events and exact source attribution', async (): Promise<void> => {
+  const bytes = new Uint8Array(readFileSync('tests/fixtures/nyse-ice.pdf'));
+  const events = await parseNysePdf(bytes, nysePdf);
+  assert.deepEqual(events, parseNyse(fixture('nyse.html'), nysePdf));
+  const blocked = async (): Promise<string> => { throw new Error('HTTP 403'); };
+  const result = await fetchHolidayCalendar('nyse', 2026, blocked, async (): Promise<Uint8Array> => bytes);
+  assert.deepEqual(result, { source: nysePdf, events });
+  await assert.rejects(fetchHolidayCalendar('nyse', 2029, blocked, async (): Promise<Uint8Array> => bytes), /does not cover current year 2029/);
+  await assert.rejects(parseNysePdf(new TextEncoder().encode('<html>Blocked</html>'), nysePdf), /missing, invalid/);
+  await assert.rejects(parseNysePdf(bytes.slice(0, 200), nysePdf));
 });
 
 test('holdings drive a diversified earnings universe and Nasdaq dates ignore host timezone', (): void => {

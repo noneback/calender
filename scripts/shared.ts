@@ -49,12 +49,25 @@ export function nonEmpty(events: MarketEvent[], source: Source): MarketEvent[] {
 
 /** Send a source-specific Accept header; Nasdaq rejects broad HTML-oriented request headers. */
 export async function fetchText(url: string, accept: string): Promise<string> {
+  return request(url, accept, (response): Promise<string> => response.text());
+}
+
+export async function fetchPdf(url: string): Promise<Uint8Array> {
+  return request(url, 'application/pdf', async (response): Promise<Uint8Array> => {
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if (bytes.length > 2_000_000 || new TextDecoder().decode(bytes.slice(0, 5)) !== '%PDF-') {
+      throw new Error('Official calendar PDF missing, oversized, or not a PDF');
+    }
+    return bytes;
+  });
+}
+
+async function request<T>(url: string, accept: string, read: (response: Response) => Promise<T>): Promise<T> {
   for (let attempt: number = 1; attempt <= 3; attempt += 1) {
     try {
       const response: Response = await fetch(url, { headers: { 'User-Agent': 'MarketCalendar/0.1', Accept: accept }, signal: AbortSignal.timeout(30000) });
-      const body: string = await response.text();
-      if (!response.ok) throw new Error(`GET ${url}: HTTP ${response.status}; response=${body.slice(0, 400)}`);
-      return body;
+      if (!response.ok) throw new Error(`GET ${url}: HTTP ${response.status}; response=${(await response.text()).slice(0, 400)}`);
+      return await read(response);
     } catch (error) {
       if (!(error instanceof Error)) throw error;
       console.warn(JSON.stringify({ message: 'Source request failed', url, attempt, error: error.message }));
