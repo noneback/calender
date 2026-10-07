@@ -20,6 +20,19 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Check official alternate endpoints live
+        run: |
+          node --experimental-strip-types --input-type=module <<'JS'
+          import { fetchHolidayCalendar } from './scripts/holiday-source.ts';
+          import { fetchText, sources } from './scripts/shared.ts';
+          for (const id of ['nyse', 'sse']) {
+            const result = await fetchHolidayCalendar(id, new Date().getUTCFullYear(), async (url, accept) => {
+              if (url === sources[id].url) throw new Error('Primary intentionally skipped for alternate smoke test');
+              return fetchText(url, accept);
+            });
+            console.info(JSON.stringify({ source: id, url: result.source.url, events: result.events.length }));
+          }
+          JS
       - name: Check live data from the deployment runner
         run: |
           rm -f public/data/events.json
