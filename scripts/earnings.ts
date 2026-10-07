@@ -1,11 +1,15 @@
 import { parse } from 'csv-parse/sync';
 import { z } from 'zod';
+import { leaderSchema } from '../src/model.ts';
 import type { Leader, MarketEvent } from '../src/model.ts';
 import { datedEvent, englishMonth, isoDay, requireMatch, sources } from './shared.ts';
 
 const holdingSchema = z.object({
   Ticker: z.string().min(1), Name: z.string().min(1), Sector: z.string().min(1),
-  'Asset Class': z.string(), 'Weight (%)': z.coerce.number().nonnegative(),
+  'Asset Class': z.string().min(1),
+  // Cash/derivative balances may be negative. Still reject blank/non-finite
+  // numeric data before filtering so malformed source rows cannot slip through.
+  'Weight (%)': z.string().regex(/^[+-]?\d+(?:\.\d+)?$/).transform(Number).pipe(z.number()),
 });
 
 /** Sector top three plus overall top ten; class shares are grouped by issuer name. */
@@ -15,7 +19,7 @@ export function parseLeaders(csv: string): { leaders: Leader[]; holdingsDate: st
   const holdingsDate: string = requireMatch(csv.slice(0, start), /Fund Holdings as of,"([^"]+)"/, 'IVV holdings date')[1]!;
   const rows = z.array(holdingSchema).parse(parse(csv.slice(start), { columns: true, skip_empty_lines: true, trim: true }));
   const equities: Leader[] = rows.filter((row): boolean => row['Asset Class'] === 'Equity')
-    .map((row): Leader => ({ symbol: row.Ticker.replace(/ /g, '.'), name: row.Name, sector: row.Sector, weight: row['Weight (%)'] }))
+    .map((row): Leader => leaderSchema.parse({ symbol: row.Ticker.replace(/ /g, '.'), name: row.Name, sector: row.Sector, weight: row['Weight (%)'] }))
     .sort((a: Leader, b: Leader): number => b.weight - a.weight);
   if (equities.length < 400) throw new Error(`IVV holdings incomplete: ${equities.length} equities`);
   const issuers: Leader[] = equities.filter((item: Leader, index: number, all: Leader[]): boolean =>

@@ -3,6 +3,9 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseBoj, parseFed } from '../scripts/policy.ts';
 import { parseNyse, parseSse } from '../scripts/holidays.ts';
+import { fetchHolidayCalendar, holidayAlternatives, nysePdf } from '../scripts/holiday-source.ts';
+import { parseNysePdf } from '../scripts/nyse-pdf.ts';
+import { sources } from '../scripts/shared.ts';
 import { parseMacro } from '../scripts/macro.ts';
 import { parseLeaders, parseEarnings } from '../scripts/earnings.ts';
 import { parseExpirations } from '../scripts/expirations.ts';
@@ -32,6 +35,46 @@ test('official HTML calendar integrations parse real publisher structures', (): 
   assert.throws((): void => { parseFed('<html>Service unavailable</html>', 2026); }, /No events parsed/);
 });
 
+test('official annual announcements preserve holiday dates and early closes', (): void => {
+  const dates = (events: ReturnType<typeof parseNyse>) => events.map(({ id, title, timing }) => ({ id, title, timing })).sort((a, b) => a.id.localeCompare(b.id));
+  assert.deepEqual(dates(parseNyse(fixture('nyse-ice.html'))), dates(parseNyse(fixture('nyse.html'))));
+  assert.deepEqual(dates(parseSse(fixture('sse-2026.html'))), dates(parseSse(fixture('sse.html'))));
+  assert.equal(parseNyse(fixture('nyse-ice.html')).length, 34);
+  assert.equal(parseSse(fixture('sse-2026.html')).length, 33);
+  assert.throws((): void => { parseNyse(fixture('nyse-ice.html').replaceAll('Each market will close early at 1:00 p.m.', 'Missing')); }, /early-close/);
+  assert.throws((): void => { parseNyse(fixture('nyse-ice.html').replace("Washington's Birthday", 'Unknown')); }, /Unknown NYSE holiday/);
+});
+
+test('403 uses a fetched official alternative with exact provenance, never invented or stale-year dates', async (): Promise<void> => {
+  for (const id of ['nyse', 'sse'] as const) {
+    const calls: string[] = [];
+    const request = async (url: string): Promise<string> => {
+      calls.push(url);
+      if (url === sources[id].url) throw new Error('HTTP 403');
+      return fixture(id === 'nyse' ? 'nyse-ice.html' : 'sse-2026.html');
+    };
+    const result = await fetchHolidayCalendar(id, 2026, request);
+    assert.deepEqual(calls, [sources[id].url, holidayAlternatives[id].url]);
+    assert.deepEqual(result.source, holidayAlternatives[id]);
+    assert.ok(result.events.every((event): boolean => event.source?.url === holidayAlternatives[id].url));
+    const blockedPdf = async (): Promise<Uint8Array> => { throw new Error('PDF unavailable'); };
+    await assert.rejects(fetchHolidayCalendar(id, 2029, request, blockedPdf), /does not cover current year 2029/);
+    await assert.rejects(fetchHolidayCalendar(id, 2026, async (): Promise<string> => '<html>Blocked</html>', blockedPdf), /calendars unavailable/);
+  }
+});
+
+test('official PDF reconstruction preserves all 34 NYSE events and exact source attribution', async (): Promise<void> => {
+  const bytes = new Uint8Array(readFileSync('tests/fixtures/nyse-ice.pdf'));
+  const events = await parseNysePdf(bytes, nysePdf);
+  assert.deepEqual(events, parseNyse(fixture('nyse.html'), nysePdf));
+  const blocked = async (): Promise<string> => { throw new Error('HTTP 403'); };
+  const result = await fetchHolidayCalendar('nyse', 2026, blocked, async (): Promise<Uint8Array> => bytes);
+  assert.deepEqual(result, { source: nysePdf, events });
+  await assert.rejects(fetchHolidayCalendar('nyse', 2029, blocked, async (): Promise<Uint8Array> => bytes), /does not cover current year 2029/);
+  await assert.rejects(parseNysePdf(new TextEncoder().encode('<html>Blocked</html>'), nysePdf), /missing, invalid/);
+  await assert.rejects(parseNysePdf(bytes.slice(0, 200), nysePdf));
+});
+
 test('holdings drive a diversified earnings universe and Nasdaq dates ignore host timezone', (): void => {
   const { leaders } = parseLeaders(fixture('ivv.csv'));
   assert.equal(new Set(leaders.map((leader): string => leader.sector)).size, 11);
@@ -40,6 +83,24 @@ test('holdings drive a diversified earnings universe and Nasdaq dates ignore hos
   assert.ok(earnings.every((event): boolean => event.category === 'earnings' && event.title.includes('预估')));
   assert.throws((): void => { parseEarnings(fixture('earnings.json'), '2026-10-28', leaders); }, /wrong day/);
   assert.throws((): void => { parseEarnings('{"status":{"rCode":403}}', '2026-10-29', leaders); });
+});
+
+test('negative cash or derivative balances do not invalidate equity leaders or earnings', (): void => {
+  const csv = fixture('ivv.csv');
+  const expected = parseLeaders(csv);
+  // Same shape and cash weight as the live 2026-10-05 IVV export that broke sync.
+  const cash = '\n"USD","USD CASH","Cash and/or Derivatives","Cash","-1.00","-0.03","-1.00","-1.00","100.00","United States","-","USD","1.00","USD","-"\n';
+  const withCash = parseLeaders(csv + cash);
+  assert.deepEqual(withCash, expected);
+  assert.deepEqual(parseLeaders(csv + cash.replace('"Cash",', '"Futures",')), expected);
+  assert.ok(withCash.leaders.every((leader): boolean => leader.weight >= 0 && leader.symbol !== 'USD'));
+  assert.ok(parseEarnings(fixture('earnings.json'), '2026-10-29', withCash.leaders).length > 0);
+  assert.throws((): void => { parseLeaders(csv.replace('"8.27"', '"-8.27"')); }, /Too small/);
+  for (const weight of ['', 'NaN', 'Infinity', 'invalid']) {
+    assert.throws((): void => { parseLeaders(csv + cash.replace('"-0.03"', `"${weight}"`)); });
+  }
+  assert.throws((): void => { parseLeaders(csv.split('\n').slice(0, 30).join('\n')); }, /holdings incomplete/);
+  assert.throws((): void => { parseLeaders(csv.replaceAll('"Real Estate"', '"Financials"')); }, /Expected 11 equity sectors/);
 });
 
 test('CME quarterly expirations use official holiday shifts and feed into highlighted calendar', (): void => {

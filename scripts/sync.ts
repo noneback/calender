@@ -4,7 +4,7 @@ import type { Feed, MarketEvent, Leader } from '../src/model.ts';
 import { fetchText, sources } from './shared.ts';
 import type { Source } from './shared.ts';
 import { parseFed, parseBoj } from './policy.ts';
-import { parseNyse, parseSse } from './holidays.ts';
+import { fetchHolidayCalendar } from './holiday-source.ts';
 import { nextMacroUrl, parseMacro } from './macro.ts';
 import { parseExpirations } from './expirations.ts';
 import { parseEarnings, parseLeaders } from './earnings.ts';
@@ -37,6 +37,12 @@ async function holdingsSource(): Promise<SourceResult> {
   return { source: sources.holdings, events: [], ...holdings, start: null, end: null };
 }
 
+async function holidaySource(id: 'nyse' | 'sse'): Promise<SourceResult> {
+  const { source, events } = await fetchHolidayCalendar(id, year);
+  const days = events.map((event): string => eventDay(event, 'America/New_York')).sort();
+  return { source, events, leaders: [], holdingsDate: null, start: days[0]!, end: days.at(-1)! };
+}
+
 async function earningsSource(holdings: Promise<SourceResult>): Promise<SourceResult> {
   const { leaders, holdingsDate } = await holdings;
   const start: string = now.toISOString().slice(0, 10);
@@ -57,8 +63,8 @@ const tasks: { source: Source; promise: Promise<SourceResult> }[] = [
   { source: sources.macro, promise: macroSource() },
   { source: sources.fed, promise: calendarSource(sources.fed, (html): MarketEvent[] => parseFed(html, year)) },
   { source: sources.boj, promise: calendarSource(sources.boj, (html): MarketEvent[] => parseBoj(html, year)) },
-  { source: sources.nyse, promise: calendarSource(sources.nyse, parseNyse) },
-  { source: sources.sse, promise: calendarSource(sources.sse, parseSse) },
+  { source: sources.nyse, promise: holidaySource('nyse') },
+  { source: sources.sse, promise: holidaySource('sse') },
   { source: sources.holdings, promise: holdings },
   { source: sources.earnings, promise: earningsSource(holdings) },
 ];
@@ -70,7 +76,7 @@ const feed: Feed = feedSchema.parse({
   holdingsDate: successful.find((result): boolean => result.source.id === 'holdings')?.holdingsDate ?? null,
   sources: results.map((result, index) => {
     const source: Source = tasks[index]!.source;
-    if (result.status === 'fulfilled') return { ...source, status: 'ok', checkedAt: generatedAt, count: source.id === 'holdings' ? result.value.leaders.length : result.value.events.length, start: result.value.start, end: result.value.end, error: null };
+    if (result.status === 'fulfilled') return { ...result.value.source, status: 'ok', checkedAt: generatedAt, count: source.id === 'holdings' ? result.value.leaders.length : result.value.events.length, start: result.value.start, end: result.value.end, error: null };
     const reason: string = result.reason instanceof Error ? result.reason.message : String(result.reason);
     console.error(JSON.stringify({ message: 'Source sync failed; no events published for this source', source: source.id, error: reason }));
     return { ...source, status: 'error', checkedAt: generatedAt, count: 0, start: null, end: null, error: reason };
